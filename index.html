@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamers AI - AI-Powered Legal Predictability</title>
+    
+    <!-- 1. Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- 3. Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dreamer-blue': '#0D1B2A', // Midnight Blue (Primary Base)
+                        'dreamer-gray': '#8D99AE', // Technical Gray (Secondary)
+                        'dreamer-cyan': '#00FFFF', // Electric Cyan (Accent 1)
+                        'dreamer-pink': '#F000FF', // Neon Pink (Accent 2)
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Small helper for glowing effect on hover for buttons */
+        .btn-glow-cyan:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.4);
+        }
+        .btn-glow-pink:hover {
+            box-shadow: 0 0 15px 5px rgba(240, 0, 255, 0.4);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-dreamer-blue text-white font-inter">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
